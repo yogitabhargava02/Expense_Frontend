@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { XIcon as XMarkIcon } from '@heroicons/react/outline';
 import { MenuAlt3Icon as Bars3Icon } from '@heroicons/react/outline';
 import { BellIcon } from '@heroicons/react/outline';
+import { Fragment } from 'react';
 
 import logoImage from "../../assets/images/logo512.png";
 
@@ -31,7 +32,6 @@ export default function Example() {
                     <BellIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
 
-                  
                   <Menu as="div" className="relative ml-3">
                     <div>
                       <Menu.Button className="flex rounded-full bg-green-200 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -43,6 +43,7 @@ export default function Example() {
                         />
                       </Menu.Button>
                     </div>
+
                     <Transition
                       as={Fragment}
                       enter="transition ease-out duration-100"
@@ -56,7 +57,7 @@ export default function Example() {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href={window.location.href} // Redirect to the same page
                               className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
                               Your Profile
@@ -66,7 +67,7 @@ export default function Example() {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href={window.location.href} // Redirect to the same page
                               className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
                               Settings
@@ -76,7 +77,7 @@ export default function Example() {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href={window.location.href} // Redirect to the same page
                               className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
                               Sign out
