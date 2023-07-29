@@ -1,0 +1,193 @@
+.Cart {
+  width: 380px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  justify-content: flex-start;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+  height: 100vh;
+  z-index: 11;
+  flex-direction: column;
+  transition: var(--transition);
+  padding-bottom: 18px;
+}
+.Cart .top__cart-section {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1vmax 2vmax;
+}
+.Cart .top__cart-section svg {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.Cart .cart__del-info {
+  background-color: #f8f9fa;
+  width: 100%;
+  padding: 4px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Cart .cart__del-info .btn_sm {
+  padding: 8px 4px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.Cart .cart__del-info p {
+  font-size: 0.8rem;
+}
+.Cart .item__container {
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+  overflow-y: scroll;
+  width: 100%;
+}
+.Cart .place__order {
+  position: absolute;
+  bottom: 0;
+  background-color: #8bc54b;
+  display: flex;
+  margin-left: 1rem;
+  justify-content: space-between;
+  width: 90%;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: white;
+  padding: 2vmax;
+}
+.active {
+  display: block;
+  transform: none;
+}
+.address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.address p {
+  margin: 0;
+}
+.address span {
+  padding: 0.4vmax 0.7vmax;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1.5px solid red;
+  color: red;
+}
+.submit {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.address__selection > p {
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  padding-top: 0.2rem;
+}
+.address__selection {
+  width: 100%;
+  padding-top: 1rem;
+}
+.address__selection .address__selection-container {
+  padding: 2vmax;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 99vw;
+  z-index: 15;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay svg {
+  position: absolute;
+  font-size: 2rem;
+  top: 10px;
+  color: white;
+  right: 25px;
+  cursor: pointer;
+  background-color: #a8f556;
+  padding: 0.4vmax;
+  border-radius: 50%;
+}
+.overlay .Address__Box {
+  background-color: white;
+  padding: 2vmax;
+  border-radius: 8px;
+  width: 480px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.overlay .Address__Box .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.overlay .Address__Box .form .cost__name {
+  display: grid;
+  grid-template-columns: 20% calc(80% - 25px);
+  width: 100%;
+  gap: 25px;
+}
+.overlay .Address__Box .form .cost__name input {
+  flex: 1;
+}
+.overlay .Address__Box .form .cost__name select {
+  width: 100px;
+  margin-right: 12px;
+}
+.overlay .Address__Box .form .address {
+  width: 100%;
+}
+.overlay .Address__Box .form input, .overlay .Address__Box .form select {
+  padding: 1vmax;
+  flex: 1;
+}
+.overlay .Address__Box .form .btn {
+  width: 100%;
+  background-color: #8bc54b;
+  border-radius: 7px;
+  border: none;
+}
+.overlay .Address__Box .form .btn:hover {
+  border: none;
+  background-color: #a8f556;
+}
+/* global.css */
+
+/* Beautiful color styles */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #2196F3;
+  --accent-color: #FFC107;
+}
+
+/* Margin utility classes */
+.margin-top-small {
+  margin-top: 8px;
+}
+
+.margin-top-medium {
+  margin-top: 16px;
+}
+
+.margin-top-large {
+  margin-top: 24px;
+}
+
+/* Add more margin utility classes as needed */

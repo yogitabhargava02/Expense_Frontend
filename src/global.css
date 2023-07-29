@@ -1,0 +1,21 @@
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --accent-color: #FFC107;
+  }
+  
+  /* Margin utility classes */
+  .margin-top-small {
+    margin-top: 8px;
+  }
+  
+  .margin-top-medium {
+    margin-top: 16px;
+  }
+  
+  .margin-top-large {
+    margin-top: 24px;
+  }
+  
+  
